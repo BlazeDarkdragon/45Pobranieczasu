@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zegar1"
+                android:layout_gravity="center"
+                android:timePickerMode="clock"/>
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timePicker"
+                android:layout_gravity="center"
+                android:timePickerMode="spinner"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:text="Wybierz godzinę"
+                android:textSize="40px" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Pobierz"
+                android:text="Wybierz godzinę"
+                android:textSize="40px" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Odczytaj"
+                android:text="Odczytaj"
+                android:textSize="40px" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Zapisz"
+                android:text="Zapisz"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="40px" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
